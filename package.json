@@ -1,0 +1,39 @@
+{
+  "name": "19-asset-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "lint": "eslint '**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.353.0",
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "bcrypt": "^3.0.2",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongodb-memory-server": "^2.7.0",
+    "mongoose": "^5.3.11",
+    "multer": "^1.4.1",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/supergoose.js",
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
